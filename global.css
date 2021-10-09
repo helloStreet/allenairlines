@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  h1 {
+    @apply text-h1mobile  md:text-h1desktop font-serif mb-4;
+  }
+  h2 {
+    @apply text-h2mobile md:text-h2desktop font-serif mb-3.5 text-myaubergine;
+  }
+  h3 {
+    @apply text-h3mobile md:text-h3desktop font-serif mb-3 text-myaubergine;
+  }
+  h4 {
+    @apply text-h4mobile md:text-h4desktop font-serif mb-2.5 text-myaubergine;
+  }
+  h5 {
+    @apply text-h5mobile md:text-h5desktop font-serif mb-2 text-myaubergine;
+  }
+  h6 {
+    @apply text-h6mobile md:text-h6desktop font-serif mb-2;
+  }
+  hr {
+    @apply mt-10 mb-10;
+  }
+  p {
+    @apply text-bodymobile md:text-bodytablet lg:text-bodydesktop font-mono pb-3;
+  }
+  span {
+    @apply text-bodymobile md:text-bodytablet lg:text-bodydesktop font-mono mx-auto;
+  }
+  li {
+    @apply text-bodymobile md:text-bodytablet lg:text-bodydesktop font-mono px-3 ml-5;
+  }
+  a {
+    @apply text-xl;
+  }
+  .btn-primary {
+    @apply w-full h-12 flex text-center items-center  px-6       
+      text-mypink rounded-md text-sm font-bold border-none uppercase
+      transition-all duration-200 relative z-10 bg-transparent
+      hover:text-myaubergine overflow-hidden
+      cursor-pointer;
+  }
+  .btn-primary:before {
+    content: "";
+    @apply absolute w-full h-full inset-0 bg-myaubergine -z-1;
+  }
+  .btn-primary:after {
+    content: "";
+    @apply absolute h-full w-0 left-0 top-0 bg-mypink -z-1
+    transition-all duration-300;
+  }
+  .btn-primary:hover:after {
+    @apply w-full;
+  }
+  .btn-secondary {
+    @apply w-full h-12 flex text-center items-center max-w-xs px-6       
+      text-myaubergine rounded-md text-sm font-bold border-none uppercase
+      transition-all duration-200 relative z-10 bg-transparent
+      hover:text-mypink overflow-hidden
+      cursor-pointer;
+  }
+  .btn-secondary:before {
+    content: "";
+    @apply absolute w-full h-full inset-0 bg-mypink -z-1;
+  }
+  .btn-secondary:after {
+    content: "";
+    @apply absolute h-full w-0 left-0 top-0 bg-mylightblue -z-1
+    transition-all duration-300;
+  }
+  .btn-secondary:hover:after {
+    @apply w-full;
+  }
+
+  .social-icon {
+    @apply bg-mypink rounded-full  inline-block mr-2;
+  }
+  .container-wrapper {
+    @apply mx-auto max-w-screen-xl mb-16 px-4;
+  }
+  .image-wrapper {
+    position: relative;
+    object-fit: contain;
+  }
+
+  .couple-animation {
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 2;
+    object-fit: contain;
+    max-width: 100%;
+  }
+
+  .split-1 {
+    top: 0;
+    left: 0;
+    display: static;
+    position: absolute;
+    z-index: 10;
+  }
+
+  .main-1 {
+    z-index: 1;
+  }
+}
