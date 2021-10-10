@@ -21,8 +21,8 @@ const page3 = () => {
           <div className="w-full flex-2 flex flex-col p-4 bg-gray-100 rounded-t-xl">
             <h5 className="w-full flex-1">17/10/21</h5>
             <h5 className="w-full flex-1">2pm</h5>
-            <h5 className="w-full flex-1">Denam Aerodrome</h5>
-            <h5 className="w-full flex-1">Denam Aerodrome</h5>
+            <h5 className="w-full flex-1">Denham Aerodrome</h5>
+            <h5 className="w-full flex-1">Denham Aerodrome</h5>
           </div>
         </div>
       </div>
