@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../Components/Layout/Layout";
-import JackUniform from "../images/uniform.jpg";
+import JackUniform from "../images/jack6.jpg";
 const page3 = () => {
   return (
     <Layout>

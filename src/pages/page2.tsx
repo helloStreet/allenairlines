@@ -1,7 +1,7 @@
 import { Link } from "gatsby";
 import React from "react";
 import Layout from "../Components/Layout/Layout";
-import JackPilot from "../images/jack6.jpg";
+import JackPilot from "../images/uniform.jpg";
 const page2 = () => {
   const flights = [
     { name: "R McIlroy", flight: "1234", status: "Cancelled" },
