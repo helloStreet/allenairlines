@@ -2,26 +2,24 @@ import { Link } from "gatsby";
 import React, { useState } from "react";
 import styled from "styled-components";
 
-
 const MobileNav = ({ mobileitems }) => {
   const [showMobileNav, setShowMobileNav] = useState(false);
 
   return (
-    <div className=" block relative z-50 ">
+    <div className=" block relative z-50 border border-b-4 mb-4">
       <div className="max-w-screen-lg mx-auto flex justify-between items-center flex-row py-3 px-5">
-       <h2>Allen Airlines</h2>
+        <h2>Allen Airlines</h2>
 
         <div className="text-white">
           <BurgerMenu onClick={() => setShowMobileNav(!showMobileNav)}>
             <Line1 showMobileMenu={showMobileNav} />
             <Line2 showMobileMenu={showMobileNav} />
             <Line3 showMobileMenu={showMobileNav} />
-         
           </BurgerMenu>
         </div>
       </div>
       {showMobileNav && (
-        <div className="bg-white w-full h-full flex flex-col  absolute transition ease-in duration-1000">
+        <div className="bg-white w-full h-full flex flex-col border border-b-4 absolute transition ease-in duration-1000">
           {mobileitems.map((item, i) => {
             return (
               <div className="bg-white flex relative px-5 w-full h-full shadow-xl">

@@ -38,7 +38,7 @@ module.exports = {
         h6mobile: ["14px", "22px"],
         bodydesktop: ["18px", "28px"],
         bodytablet: ["16px", "29px"],
-        bodymobile: ["14px", "24px"],
+        bodymobile: ["16px", "24px"],
         buttonxl: ["22px", "26px"],
         buttonlg: ["20px", "23px"],
         buttonmd: ["14px", "16px"],
