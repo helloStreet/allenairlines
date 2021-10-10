@@ -1,7 +1,7 @@
 import { Link } from "gatsby";
 import React from "react";
 import Layout from "../Components/Layout/Layout";
-import JackPilot from "../images/airport4JPG.jpg";
+import JackPilot from "../images/jack6.jpg";
 const page2 = () => {
   const flights = [
     { name: "R McIlroy", flight: "1234", status: "Cancelled" },
@@ -10,11 +10,11 @@ const page2 = () => {
   ];
   return (
     <Layout>
-      <h3 className="mx-4">
+      <h3 className="mx-4 my-4">
         With Captain Jack in control, some of our flights arive on time!
       </h3>
       <img src={JackPilot} />
-      <h4 className="mx-4">Allen Airlines Departures</h4>
+      <h4 className="mx-4 py-4">Allen Airlines Departures</h4>
       <p className="mx-4">Select your flight for more information</p>
 
       <div className=" mx-4  flex flex-col border border-3 rounded-xl ">

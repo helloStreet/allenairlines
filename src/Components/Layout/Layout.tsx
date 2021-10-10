@@ -13,7 +13,7 @@ const NavLinks = [
 
 const Layout = ({ title, children }) => {
   return (
-    <div className="max-w-maxWidth mx-auto">
+    <div className="max-w-maxWidth mx-auto text-center">
       <MobileNav mobileitems={NavLinks} />
       {children}
 
